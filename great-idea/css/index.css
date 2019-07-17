@@ -229,7 +229,7 @@ nav a:hover {
   padding-top: 35px;
 }
 
-#innovation img {
+#code-snippet {
   padding-top: 35px;
 }
 
@@ -320,16 +320,101 @@ footer p {
   padding: 0 20px 10px 0;
 }
 
-ul {
-  padding-left: 18px;
-}
-
 li {
   list-style-type: square;
+  list-style-position: inside;
 }
 
 .bottom-15 {
   padding-bottom: 17px;
 }
 
-/********** FOOTER (SERVICES) **********/
+/********** MEDIA QUERIES **********/
+
+@media only screen and (max-width: 800px) {
+  /*** General ***/
+
+  .display-flex {
+    flex-flow: column nowrap;
+  }
+
+  .start-align {
+    align-items: center;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  nav a {
+    padding-top: 15px;
+  }
+
+  /*** Innovation (Index) ***/
+
+  #innovation {
+    margin-bottom: 40px;
+  }
+
+  #innovation h1 {
+    font-size: 60px;
+  }
+
+  #code-snippet {
+    width: 60%;
+    margin-top: 15px;
+  }
+
+  /*** Everything Else (Index) ***/
+
+  hr,
+  #middle-img,
+  .features-about,
+  .spv {
+    width: 90%;
+  }
+
+  section.features-about h2,
+  section.spv h2,
+  #contact {
+    text-align: center;
+  }
+
+  /*** Services (Services) ***/
+
+  #services-img-div {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #services-img,
+  #services-section {
+    width: 90%;
+  }
+
+  /*** Everything Else (Services) ***/
+
+  #tech-div section,
+  #tech-div button,
+  #facts-sec div,
+  #services-info-img {
+    width: 90%;
+    text-align: center;
+  }
+
+  #facts-sec div {
+    margin-bottom: 0px;
+  }
+
+  #facts-div {
+    height: auto;
+  }
+
+  #services-copyright {
+    margin-top: 40px;
+  }
+}
