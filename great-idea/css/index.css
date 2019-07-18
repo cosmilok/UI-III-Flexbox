@@ -188,6 +188,7 @@ h5 {
 p,
 #innovation button {
   font-size: 16px;
+  line-height: 20px;
 }
 
 hr {
@@ -265,6 +266,7 @@ nav a:hover {
 #contact {
   text-align: left;
   margin: 50px auto 40px auto;
+  line-height: 20px;
 }
 
 footer p {
